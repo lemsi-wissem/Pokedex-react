@@ -51,6 +51,8 @@ const enterName = (e) => {
               value={pokemon}
               onChange={enterName}
               className="col-2 py-1 my-3"
+              onKeyDown={(e)=>{if (e.key === 'Enter') {
+               Search();}}}
             />
             <button className="btn-warning py-1 px-2 mx-2 text-white fw-bold fs-5" onClick={Search}>
               See Stats
